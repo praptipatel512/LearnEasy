@@ -1,7 +1,7 @@
 import { Groq } from "groq-sdk";
 
 const groq = new Groq({ 
-  apiKey: "REPLACED_KEY", // 👈 Replace with your real key
+  apiKey: import.meta.env.VITE_GROQ_API_KEY,
   dangerouslyAllowBrowser: true 
 });
 
